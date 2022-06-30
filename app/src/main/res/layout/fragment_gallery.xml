@@ -19,20 +19,31 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal">
+
             <TextView
                 android:id="@+id/textView"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:layout_gravity="left"
+                android:layout_marginHorizontal="20dp"
                 android:text="이미지 갤러리"
-                android:layout_marginLeft="20dp"
-                android:layout_marginRight="20dp"/>
+                android:textColor="#000000"
+                android:textStyle="bold"
+                />
+
+            <View
+               android:layout_width="0dp"
+               android:layout_height="0dp"
+               android:layout_weight="1"/>
             <Button
                 android:id="@+id/btn_gallery"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginBottom="3dp"
+                android:layout_marginRight="10dp"
                 android:text="gallery"
-                android:layout_marginBottom="36dp"
-                />
+                android:layout_gravity="right"/>
         </LinearLayout>
         <androidx.recyclerview.widget.RecyclerView
             android:layout_marginTop="24dp"

@@ -15,8 +15,8 @@ import com.example.first_app.databinding.FragmentGalleryBinding
 
 // TODO: Rename parameter arguments, choose names that match
 // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
-private const val ARG_PARAM1 = "param1"
-private const val ARG_PARAM2 = "param2"
+//private const val ARG_PARAM1 = "param1"
+//private const val ARG_PARAM2 = "param2"
 
 /**
  * A simple [Fragment] subclass.
@@ -63,9 +63,6 @@ class GalleryFragment : Fragment() {
             //startActivityForResult가 삭제! -> 대체 registerForActivtyResult()
             startActivity(intent)
         }
-
-
-        //binding.recyclerView.adapter = MultiImageAdapter(requireContext())
         initRecycler()
         return binding.root
 
@@ -95,6 +92,8 @@ class GalleryFragment : Fragment() {
             reAdapter.notifyDataSetChanged()
         }
     }
+
+
 
     /*companion object {
         /**
