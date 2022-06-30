@@ -16,6 +16,9 @@ android {
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
 
+    buildFeatures{
+        viewBinding true // 뷰바인딩 활성화
+    }
     buildTypes {
         release {
             minifyEnabled false
