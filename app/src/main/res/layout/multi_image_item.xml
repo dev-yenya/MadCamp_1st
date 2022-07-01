@@ -9,7 +9,7 @@
         android:id="@+id/iv_image"
         android:src="@mipmap/ic_launcher"
         android:layout_width="match_parent"
-        android:layout_height="140dp"
+        android:layout_height="300dp"
         android:layout_margin="20dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -17,16 +17,6 @@
         app:layout_constraintTop_toTopOf="parent"
         android:scaleType="center"
         android:layout_marginHorizontal="5dp"/>
-
-    <TextView
-        android:id="@+id/tv_image"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="TextView"
-        android:background="#000000"
-        android:textColor="@color/white"
-        app:layout_constraintBottom_toBottomOf="@+id/iv_image"
-        app:layout_constraintEnd_toEndOf="@+id/iv_image" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

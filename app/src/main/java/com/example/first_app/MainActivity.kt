@@ -14,7 +14,7 @@ class MainActivity : AppCompatActivity() {
 
         // OnNavigationItemSelectedListener를 통해 탭 아이템 선택 시 이벤트를 처리
         // navi_menu.xml 에서 설정했던 각 아이템들의 id를 통해 알맞은 프래그먼트로 변경하게 한다.
-        bnv_main.run { setOnNavigationItemSelectedListener {
+        bnv_main.run { setOnItemSelectedListener {
             when(it.itemId) {
                 R.id.first -> {
                     // 다른 프래그먼트 화면으로 이동하는 기능
