@@ -1,10 +1,8 @@
 package com.example.first_app
 
-import android.Manifest
 import android.app.Activity
 import android.content.Context
 import android.content.Intent
-import android.content.pm.PackageManager
 import android.net.Uri
 import android.os.Bundle
 import android.provider.MediaStore
@@ -14,7 +12,6 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.Toast
 import androidx.activity.result.contract.ActivityResultContracts
-import androidx.core.content.ContentProviderCompat.requireContext
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.first_app.databinding.FragmentGalleryBinding
 
@@ -29,17 +26,12 @@ class GalleryFragment : Fragment() {
     // 이미지 데이터 리스트
     var list = ArrayList<Uri>()
 
-    // 1.Context를 액티비티로 형변환해서 할당
+    // Context를 액티비티로 형변환해서 할당
     lateinit var mainActivity: MainActivity
-
     override fun onAttach(context: Context) {
         super.onAttach(context)
-
-        // 2. Context를 액티비티로 형변환해서 할당
         mainActivity = context as MainActivity
     }
-
-
 
 
    override fun onCreate(savedInstanceState: Bundle?) {
@@ -91,6 +83,14 @@ class GalleryFragment : Fragment() {
         }
         //context : 액티비티에 객체 붙일 때 사용
         val layoutManager = LinearLayoutManager(mainActivity, LinearLayoutManager.HORIZONTAL, false) // requireContext : context가 null이 아님을 보장
+        reAdapter.setOnItemClickListener(object : MultiImageAdapter.OnItemClickListener{
+            override fun onItemClick(v: View, data: Uri, pos : Int) {
+                Intent(mainActivity, ImageDetailActivity::class.java).apply {
+                    putExtra("data", data)
+                    addFlags(Intent.FLAG_ACTIVITY_NEW_TASK)
+                }.run { startActivity(this) }
+            }
+        })
         binding.recyclerView.setMagneticMove()
         binding.recyclerView.adapter = reAdapter
         binding.recyclerView.layoutManager = layoutManager
