@@ -26,8 +26,8 @@ class MainActivity : AppCompatActivity() {
                     supportFragmentManager.beginTransaction().replace(R.id.fl_container, galleryFragment).commit()
                 }
                 R.id.third -> {
-                    val freeFragment = FreeFragment()
-                    supportFragmentManager.beginTransaction().replace(R.id.fl_container, freeFragment).commit()
+                    val postListFragment = PostListFragment()
+                    supportFragmentManager.beginTransaction().replace(R.id.fl_container, postListFragment).commit()
                 }
             }
             true

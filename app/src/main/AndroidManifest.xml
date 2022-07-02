@@ -14,6 +14,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.First_app.NoActionBar">
         <activity
+            android:name=".PostListActivity"
+            android:exported="false" />
+        <activity
             android:name=".SignUpActivity"
             android:exported="false" />
         <activity
@@ -32,7 +35,7 @@
             android:theme="@style/Theme.First_app.NoActionBar" />
         <activity
             android:name=".MainActivity"
-            android:exported="false"></activity>
+            android:exported="false" />
     </application>
 
 </manifest>
