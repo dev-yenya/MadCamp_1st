@@ -30,7 +30,7 @@ class SignUpActivity : AppCompatActivity() {
         joinBtn.setOnClickListener{
             val email = binding.etEmail
             val pwd = binding.etPassword
-            auth.createUserWithEmailAndPassword(email.text.toString(), pwd.text.toString())
+            auth.createUserWithEmailAndPassword(email.text.toString().trim(), pwd.text.toString().trim())
                 .addOnCompleteListener(this) { task ->
                     if (task.isSuccessful) {
                         Toast.makeText(baseContext, "Authentication succeed.", Toast.LENGTH_SHORT).show()
@@ -49,7 +49,7 @@ class SignUpActivity : AppCompatActivity() {
         binding.btnLogin.setOnClickListener{
             val email = binding.etEmail
             val pwd = binding.etPassword
-            auth.signInWithEmailAndPassword(email.text.toString(), pwd.text.toString())
+            auth.signInWithEmailAndPassword(email.text.toString().trim(), pwd.text.toString().trim())
                 .addOnCompleteListener(this) { task ->
                     if (task.isSuccessful) {
                         Toast.makeText(this, auth.currentUser?.uid.toString(), Toast.LENGTH_SHORT).show()
