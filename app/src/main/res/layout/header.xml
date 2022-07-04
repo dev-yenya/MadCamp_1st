@@ -10,16 +10,18 @@
 
     <ImageView
         android:id="@+id/imageView2"
-        android:layout_width="100dp"
-        android:layout_height="wrap_content"
-        android:layout_marginVertical="10dp"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="30dp"
         app:srcCompat="@drawable/user" />
 
     <TextView
-        android:id="@+id/text"
-        android:layout_width="wrap_content"
+        android:id="@+id/tv_h_email"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Select Item"
-        android:textSize="30dp" />
+        android:text="email"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:layout_marginTop="10dp"/>
 
 </LinearLayout>

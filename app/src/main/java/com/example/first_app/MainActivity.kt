@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
 import android.view.MenuItem
+import android.widget.TextView
 import android.widget.Toast
 import androidx.appcompat.widget.Toolbar
 import androidx.core.view.GravityCompat
@@ -40,7 +41,6 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
         // 네비게이션 드로어 내에있는 화면의 이벤트를 처리하기 위해 생성
         navigationView = findViewById(R.id.nav_view)
         navigationView.setNavigationItemSelectedListener(this) //navigation 리스너
-        // 툴바 메뉴 버튼이 클릭 됐을 때 실행하는 함수
 
         // OnNavigationItemSelectedListener를 통해 탭 아이템 선택 시 이벤트를 처리
         // navi_menu.xml 에서 설정했던 각 아이템들의 id를 통해 알맞은 프래그먼트로 변경하게 한다.
@@ -76,6 +76,9 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
         when (item!!.itemId) {
             android.R.id.home -> {
                 // 햄버거 버튼 클릭시 네비게이션 드로어 열기
+                // 네비게이션 드로어 이메일
+                val naEmail : TextView = findViewById(R.id.tv_h_email)
+                naEmail.text = FBAuth.getEmail()
                 drawerLayout.openDrawer(GravityCompat.START)
             }
         }

@@ -23,7 +23,6 @@ class SignUpActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         mBinding = ActivitySignUpBinding.inflate(layoutInflater)
         setContentView(binding.root)
-        //Toast.makeText(this, auth.currentUser?.uid.toString(), Toast.LENGTH_SHORT).show()
 
         val joinBtn = findViewById<Button>(R.id.btn_join)
         joinBtn.setOnClickListener{
@@ -33,7 +32,8 @@ class SignUpActivity : AppCompatActivity() {
                 .addOnCompleteListener(this) { task ->
                     if (task.isSuccessful) {
                         Toast.makeText(baseContext, "Authentication succeed.", Toast.LENGTH_SHORT).show()
-                        val user = auth.currentUser
+                        auth.signOut()
+                        //val user = auth.currentUser
                     } else {
                         // If sign in fails, display a message to the user.
                         Toast.makeText(baseContext, "Authentication failed.", Toast.LENGTH_SHORT).show()
@@ -47,7 +47,7 @@ class SignUpActivity : AppCompatActivity() {
                 .addOnCompleteListener(this) { task ->
                     if (task.isSuccessful) {
                         Toast.makeText(this, "Login succeed", Toast.LENGTH_SHORT).show()
-                        val user = auth.currentUser
+                        //Toast.makeText(this, auth.currentUser?.uid.toString(), Toast.LENGTH_SHORT).show()
                         val intent = Intent(this, MainActivity::class.java)
                         intent.addFlags(Intent.FLAG_ACTIVITY_NO_ANIMATION)
                         startActivity(intent)

@@ -16,12 +16,9 @@ class ImageDetailActivity : AppCompatActivity() {
     lateinit var datas : Uri
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-
             setContentView(R.layout.activity_image_detail)
             datas = intent.getSerializableExtra("data") as Uri
             Glide.with(this).load(datas).into(binding.imgDetail)
-
-
     }
 
 }
