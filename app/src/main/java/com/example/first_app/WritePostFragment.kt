@@ -34,12 +34,16 @@ class WritePostFragment : Fragment() {
         mBinding = FragmentWritePostBinding.inflate(inflater, container, false)
         binding.btnWrite.setOnClickListener{
 
-            val writeText = binding.etWrite.text
+            val writeTitle = binding.etTitle.text
+            val writeBody = binding.etBody.text
+            val writeTime = FBAuth.getTime()
+            val writeUid = FBAuth.getUid()
+            val writeEmail = FBAuth.getEmail()
             val database = Firebase.database
             val myRef = database.getReference("board")
 
             myRef.push().setValue(
-                Model(writeText.toString())
+                Model(writeTitle.toString(), writeBody.toString(), writeUid, writeTime, writeEmail)
              )
 
             val postListFragment = PostListFragment()

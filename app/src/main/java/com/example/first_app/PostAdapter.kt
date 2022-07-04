@@ -26,6 +26,12 @@ class PostAdapter(val List : MutableList<Model>) : BaseAdapter(){
 
         val title = view?.findViewById<TextView>(R.id.tv_post)
         title!!.text = List[position].title
+        val body = view?.findViewById<TextView>(R.id.tv_body)
+        body!!.text = List[position].body
+        val time = view?.findViewById<TextView>(R.id.tv_time)
+        time!!.text = List[position].time
+        val email = view?.findViewById<TextView>(R.id.tv_email)
+        email!!.text = List[position].email
 
         return view!!
     }

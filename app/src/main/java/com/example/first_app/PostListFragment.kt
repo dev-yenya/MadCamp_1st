@@ -1,5 +1,7 @@
 package com.example.first_app
 
+import android.content.Context
+import android.content.Intent
 import android.os.Bundle
 import android.util.Log
 import androidx.fragment.app.Fragment
@@ -19,7 +21,9 @@ class PostListFragment : Fragment() {
 
     lateinit var postAdapter : PostAdapter
     val postList = mutableListOf<Model>()
+    private val postKeyList = mutableListOf<String>()
 
+    //PostList data 받아오기
     fun getData(){
         val database = Firebase.database
         val myRef = database.getReference("board")
@@ -30,8 +34,11 @@ class PostListFragment : Fragment() {
                     val item = dataModel.getValue(Model::class.java)
                     Log.d("PostListFragment", item.toString())
                     postList.add(item!!)
+                    postKeyList.add(dataModel.key.toString())
                 }
                 postAdapter.notifyDataSetChanged()
+                postList.reverse() // 최신순
+                postKeyList.reverse() // 최신순
             }
             override fun onCancelled(error: DatabaseError) {
                 // Failed to read value
@@ -41,6 +48,7 @@ class PostListFragment : Fragment() {
         myRef.addValueEventListener(postListener)
 
     }
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         arguments?.let {
@@ -61,7 +69,24 @@ class PostListFragment : Fragment() {
                 .replace(R.id.fl_container, writePostFragment, "writePost")
                 .commit();
         }
+        binding.lvPost.setOnItemClickListener { parent, view, position, id ->
+            val readPostFragment = ReadFragment()
+            //fragment에 데이터 전달하기
+            val bundle = Bundle()
+            bundle.putString("key", postKeyList[position])
+            readPostFragment.arguments = bundle
+            Log.e("send key : ", postKeyList[position])
+            requireActivity().getSupportFragmentManager().beginTransaction()
+                .replace(R.id.fl_container, readPostFragment, "readPost")
+                .commit();
+        }
         return binding.root
+    }
+
+    override fun onDestroyView() {
+        //onDestroyView 에서 binding class 인스턴스 참조를 정리해주어야 한다.
+        mBinding = null
+        super.onDestroyView()
     }
 
     companion object {
