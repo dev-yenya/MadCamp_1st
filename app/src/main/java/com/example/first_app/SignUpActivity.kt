@@ -23,8 +23,7 @@ class SignUpActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         mBinding = ActivitySignUpBinding.inflate(layoutInflater)
         setContentView(binding.root)
-
-        Toast.makeText(this, auth.currentUser?.uid.toString(), Toast.LENGTH_SHORT).show()
+        //Toast.makeText(this, auth.currentUser?.uid.toString(), Toast.LENGTH_SHORT).show()
 
         val joinBtn = findViewById<Button>(R.id.btn_join)
         joinBtn.setOnClickListener{
@@ -41,18 +40,13 @@ class SignUpActivity : AppCompatActivity() {
                     }
                 }
         }
-        binding.btnLogout.setOnClickListener{
-            auth.signOut()
-            Toast.makeText(this, auth.currentUser?.uid.toString()+" : logout", Toast.LENGTH_SHORT).show()
-        }
-
         binding.btnLogin.setOnClickListener{
             val email = binding.etEmail
             val pwd = binding.etPassword
             auth.signInWithEmailAndPassword(email.text.toString().trim(), pwd.text.toString().trim())
                 .addOnCompleteListener(this) { task ->
                     if (task.isSuccessful) {
-                        Toast.makeText(this, auth.currentUser?.uid.toString(), Toast.LENGTH_SHORT).show()
+                        Toast.makeText(this, "Login succeed", Toast.LENGTH_SHORT).show()
                         val user = auth.currentUser
                         val intent = Intent(this, MainActivity::class.java)
                         intent.addFlags(Intent.FLAG_ACTIVITY_NO_ANIMATION)

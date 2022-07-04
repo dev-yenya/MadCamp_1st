@@ -6,5 +6,5 @@
     <item android:id="@+id/second" app:showAsAction="ifRoom"
         android:icon="@drawable/folder" android:title="gallery" />
     <item android:id="@+id/third" app:showAsAction="ifRoom"
-        android:enabled="true" android:icon="@drawable/monoparental" android:title="free" />
+        android:enabled="true" android:icon="@drawable/monoparental" android:title="community" />
 </menu>
