@@ -11,21 +11,13 @@
 
 ---
 
-![Screenshot_20220705-200147_first_app.jpg](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/e823b9ab-53ad-4f2f-aaf8-29f1a5e59e98/Screenshot_20220705-200147_first_app.jpg)
+![Screenshot_20220705-200147_first_app](https://user-images.githubusercontent.com/76472415/177323484-014025df-954e-4b6f-b9b5-6cf6d43bba9d.jpg)
 
-![Screenshot_20220705-200129_first_app.jpg](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/1090a934-8946-4652-83cb-cbc3b0fdac8e/Screenshot_20220705-200129_first_app.jpg)
+![Screenshot_20220705-200129_first_app](https://user-images.githubusercontent.com/76472415/177323507-1eda7805-9ae6-408a-9ae8-af9c978370d0.jpg)
 
-![Screenshot_20220705-200109_first_app.jpg](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/e71e1647-4289-4672-9930-b5a7418e0efa/Screenshot_20220705-200109_first_app.jpg)
+![Screenshot_20220705-200109_first_app](https://user-images.githubusercontent.com/76472415/177323547-dae6a58a-81eb-4722-b417-c0478c069102.jpg)
 
-![Screenshot_20220705-200121_first_app.jpg](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/10d79c7a-3fa4-4714-8742-0b1644825db6/Screenshot_20220705-200121_first_app.jpg)
-
-![Screenshot_20220705-200105_first_app.jpg](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/a546de37-3e71-40a5-87ce-2758baf9da70/Screenshot_20220705-200105_first_app.jpg)
-
-![Screenshot_20220705-200100_first_app.jpg](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/3df70ec2-02fb-4dac-ad12-aff953226a38/Screenshot_20220705-200100_first_app.jpg)
-
-![Screenshot_20220705-200020_first_app.jpg](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/1703ecde-47d8-4d74-9fb7-5c39bfc34f87/Screenshot_20220705-200020_first_app.jpg)
-
-![Screenshot_20220705-200117_first_app.jpg](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/b63e1972-f33a-4899-9c2b-b54e8ac593be/Screenshot_20220705-200117_first_app.jpg)
+![Screenshot_20220705-200105_first_app](https://user-images.githubusercontent.com/76472415/177323564-1ff94b71-e9f8-4c06-8c53-e9dd6b982b1d.jpg)
 
 ---
 
@@ -74,8 +66,6 @@
 
 ### TAB 1 - 연락처
 
-![Screenshot_20220705-200105_first_app.jpg](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/a546de37-3e71-40a5-87ce-2758baf9da70/Screenshot_20220705-200105_first_app.jpg)
-
 **Main features**
 
 - 연락처
@@ -110,11 +100,7 @@
 
 ### TAB 3 - 커뮤니티
 
-![Screenshot_20220705-200020_first_app.jpg](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/1703ecde-47d8-4d74-9fb7-5c39bfc34f87/Screenshot_20220705-200020_first_app.jpg)
 
-![Screenshot_20220705-200121_first_app.jpg](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/10d79c7a-3fa4-4714-8742-0b1644825db6/Screenshot_20220705-200121_first_app.jpg)
-
-![Screenshot_20220705-200117_first_app.jpg](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/b63e1972-f33a-4899-9c2b-b54e8ac593be/Screenshot_20220705-200117_first_app.jpg)
 
 **Main features**
 
