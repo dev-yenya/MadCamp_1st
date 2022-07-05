@@ -32,7 +32,9 @@
             android:id="@+id/btn_write"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="글쓰기" />
+            android:layout_marginTop="20dp"
+            android:text="글쓰기"
+            android:background="@drawable/radius_button"/>
 
     </LinearLayout>
 

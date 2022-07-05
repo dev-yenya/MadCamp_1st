@@ -6,23 +6,19 @@
     android:layout_height="match_parent"
     tools:context=".SignUpActivity"
     android:orientation="vertical"
-    android:layout_margin="20dp">
+    android:layout_margin="20dp"
+    android:background="@drawable/login">
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        android:layout_gravity="center">
-        <TextView
-            android:id="@+id/textView2"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginVertical="10dp"
-            android:text="I AM"
-            android:textAlignment="center"
-            android:textColor="#000000"
-            android:textStyle="bold" />
+        android:layout_gravity="center"
+        android:layout_marginHorizontal="30dp"
+        android:layout_marginTop="130dp">
+
 
         <EditText
+
             android:id="@+id/et_email"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -42,6 +38,7 @@
             android:layout_height="wrap_content"
             android:orientation="horizontal"
             android:gravity="right"
+            android:layout_marginTop="10dp"
             >
             <Button
                 android:id="@+id/btn_login"
@@ -50,6 +47,8 @@
                 android:layout_weight="1"
                 android:layout_height="wrap_content"
                 android:layout_marginHorizontal="5dp"
+                android:background="@drawable/radius_button"
+                android:layout_marginBottom="5dp"
                 />
         </LinearLayout>
         <Button
@@ -58,6 +57,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="5dp"
+            android:background="@drawable/radius_button"
             />
     </LinearLayout>
 </LinearLayout>

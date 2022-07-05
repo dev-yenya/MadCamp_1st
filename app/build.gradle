@@ -18,6 +18,7 @@ android {
 
     buildFeatures{
         viewBinding true // 뷰바인딩 활성화
+        dataBinding true // 데이터바인딩 활성화
     }
     buildTypes {
         release {
@@ -55,4 +56,5 @@ dependencies {
     implementation 'com.google.firebase:firebase-auth-ktx'
     implementation 'com.google.firebase:firebase-database-ktx'
     implementation "com.google.android.material:material:$version"
+    implementation 'com.fxn769:ariana:1.0'
 }
