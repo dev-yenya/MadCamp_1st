@@ -37,15 +37,9 @@
 
 ### LOGIN
 
-![Screenshot_20220705-200147_first_app.jpg](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/e823b9ab-53ad-4f2f-aaf8-29f1a5e59e98/Screenshot_20220705-200147_first_app.jpg)
-
-![Screenshot_20220705-200129_first_app.jpg](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/1090a934-8946-4652-83cb-cbc3b0fdac8e/Screenshot_20220705-200129_first_app.jpg)
-
-![Screenshot_20220705-200109_first_app.jpg](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/e71e1647-4289-4672-9930-b5a7418e0efa/Screenshot_20220705-200109_first_app.jpg)
+![화면 캡처 2022-07-05 211104](https://user-images.githubusercontent.com/76472415/177325431-f772bf75-3a8b-4109-9710-b85760ff997c.png)
 
 **Main features**
-
-![화면 캡처 2022-07-05 211104](https://user-images.githubusercontent.com/76472415/177324625-7c2d2f14-a599-4cac-bd5a-3e2e6e75782a.png)
 
 - Login
     - email과 password를 입력한 후, “LOGIN” 버튼을 통해 앱을 사용할 수 있습니다.
