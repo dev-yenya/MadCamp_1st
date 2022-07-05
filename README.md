@@ -11,13 +11,16 @@
 
 ---
 
+<figure class="third">
 ![Screenshot_20220705-200147_first_app](https://user-images.githubusercontent.com/76472415/177323484-014025df-954e-4b6f-b9b5-6cf6d43bba9d.jpg)
 
 ![Screenshot_20220705-200129_first_app](https://user-images.githubusercontent.com/76472415/177323507-1eda7805-9ae6-408a-9ae8-af9c978370d0.jpg)
 
 ![Screenshot_20220705-200109_first_app](https://user-images.githubusercontent.com/76472415/177323547-dae6a58a-81eb-4722-b417-c0478c069102.jpg)
-
+figure>
 ![Screenshot_20220705-200105_first_app](https://user-images.githubusercontent.com/76472415/177323564-1ff94b71-e9f8-4c06-8c53-e9dd6b982b1d.jpg)
+
+
 
 ---
 
