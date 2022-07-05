@@ -18,6 +18,7 @@ android {
 
     buildFeatures{
         viewBinding true // 뷰바인딩 활성화
+        dataBinding true // 데이터바인딩 활성화
     }
     buildTypes {
         release {

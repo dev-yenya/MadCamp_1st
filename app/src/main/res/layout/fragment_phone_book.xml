@@ -1,21 +1,28 @@
-<?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".PostListFragment"
-    android:layout_marginTop="?attr/actionBarSize"
-    >
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical"
-        >
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="phoneBookViewModel" type="com.example.first_app.PhoneBookViewModel"/>
+    </data>
+    <androidx.constraintlayout.widget.ConstraintLayout android:layout_width="match_parent" android:layout_height="match_parent"
+        tools:context=".first_app.PhoneBookFragment"
+        android:layout_marginBottom="?attr/actionBarSize"
+        android:layout_marginTop="70dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:layout_marginTop="50dp"
+            android:orientation="vertical"
+            tools:ignore="MissingConstraints">
+
+        </LinearLayout>
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
-            android:layout_marginVertical="10dp">
+            android:layout_marginVertical="10dp"
+            android:layout_marginTop="20dp"
+            tools:ignore="MissingConstraints">
 
             <TextView
                 android:id="@+id/textView"
@@ -40,18 +47,15 @@
                 android:layout_marginRight="20dp"
                 android:src="@drawable/add" />
         </LinearLayout>
-
-        <ListView
-            android:id="@+id/lv_post"
+        <androidx.recyclerview.widget.RecyclerView android:id="@+id/phone_number_list"
             android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_marginHorizontal="15dp"
-            android:layout_weight="1"
-            tools:layout_editor_absoluteX="1dp"
-            tools:layout_editor_absoluteY="1dp"
-            android:layout_marginBottom="?attr/actionBarSize"/>
-
-    </LinearLayout>
-
-
-</FrameLayout>
+            android:layout_height="match_parent"
+            android:layout_marginTop="40dp"
+            android:layout_marginHorizontal="20dp"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            app:layout_constraintBottom_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
