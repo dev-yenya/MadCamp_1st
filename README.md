@@ -75,7 +75,9 @@
 
 **기술 설명**
 
-- Json 파일을 parse하여 연락처 데이터를 얻은 후 Recycler view를 이용하여 이름과 전화번호를 display하는 Phonebook tab을 구현하였습니다.
+- Assets 디렉토리에 있는 Json 파일을 parse하여 연락처 데이터를 얻은 후 Recycler view를 이용하여 이름과 전화번호를 display하는 Phonebook tab을 구현하였습니다.
+- Viewholder binding 과정에서 전화 이미지 버튼에 각 번호로의 다이얼액션을 부여하여 버튼을 클릭하면 해당 번호의 다이얼 화면으로 연결됩니다. 
+- ViewModel을 이용하여 화면 회전등의 configuration change에도 데이터와 뷰가 유지되도록 구현하였습니다.
 
 ---
 
