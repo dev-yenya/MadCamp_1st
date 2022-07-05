@@ -98,4 +98,10 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
         }
         return true
     }
+
+    override fun onBackPressed(){
+        finishAffinity();
+        System.runFinalization();
+        System.exit(0);
+    }
 }

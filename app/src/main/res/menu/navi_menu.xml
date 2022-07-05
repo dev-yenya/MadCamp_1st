@@ -2,9 +2,9 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto">
     <item android:id="@+id/first" app:showAsAction="ifRoom" android:enabled="true"
-        android:icon="@drawable/call" android:title="phone book" />
+        android:icon="@drawable/call" android:title="Phone" />
     <item android:id="@+id/second" app:showAsAction="ifRoom"
-        android:icon="@drawable/folder" android:title="gallery" />
+        android:icon="@drawable/folder" android:title="Photo" />
     <item android:id="@+id/third" app:showAsAction="ifRoom"
-        android:enabled="true" android:icon="@drawable/monoparental" android:title="community" />
+        android:enabled="true" android:icon="@drawable/monoparental" android:title="Commu" />
 </menu>

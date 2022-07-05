@@ -40,6 +40,15 @@ class SignUpActivity : AppCompatActivity() {
                     }
                 }
         }
+        // 현재 로그인 상태
+        val user = FirebaseAuth.getInstance().currentUser
+        if (user != null) {
+            Toast.makeText(this, "Login succeed", Toast.LENGTH_SHORT).show()
+            val intent = Intent(this, MainActivity::class.java)
+            intent.addFlags(Intent.FLAG_ACTIVITY_NO_ANIMATION)
+            startActivity(intent)
+        }
+        // 새로 로그인 or 회원가입
         binding.btnLogin.setOnClickListener{
             val email = binding.etEmail
             val pwd = binding.etPassword
