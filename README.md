@@ -11,15 +11,8 @@
 
 ---
 
-<figure class="third">
-![Screenshot_20220705-200147_first_app](https://user-images.githubusercontent.com/76472415/177323484-014025df-954e-4b6f-b9b5-6cf6d43bba9d.jpg)
 
-![Screenshot_20220705-200129_first_app](https://user-images.githubusercontent.com/76472415/177323507-1eda7805-9ae6-408a-9ae8-af9c978370d0.jpg)
-
-![Screenshot_20220705-200109_first_app](https://user-images.githubusercontent.com/76472415/177323547-dae6a58a-81eb-4722-b417-c0478c069102.jpg)
-figure>
-![Screenshot_20220705-200105_first_app](https://user-images.githubusercontent.com/76472415/177323564-1ff94b71-e9f8-4c06-8c53-e9dd6b982b1d.jpg)
-
+![화면 캡처 2022-07-05 211036](https://user-images.githubusercontent.com/76472415/177324598-65e4e680-dc66-438f-b324-277e275d751c.png)
 
 
 ---
@@ -52,6 +45,8 @@ figure>
 
 **Main features**
 
+![화면 캡처 2022-07-05 211104](https://user-images.githubusercontent.com/76472415/177324625-7c2d2f14-a599-4cac-bd5a-3e2e6e75782a.png)
+
 - Login
     - email과 password를 입력한 후, “LOGIN” 버튼을 통해 앱을 사용할 수 있습니다.
     - 이전에 로그인이 되어 있었던 상태일 경우 자동 로그인이 가능합니다.
@@ -69,6 +64,8 @@ figure>
 
 ### TAB 1 - 연락처
 
+![화면 캡처 2022-07-05 211127](https://user-images.githubusercontent.com/76472415/177324658-1f61b402-97e3-4fa3-823b-897c6af9854e.png)
+
 **Main features**
 
 - 연락처
@@ -84,7 +81,7 @@ figure>
 
 ### TAB 2 - 이미지 갤러리
 
-![Screenshot_20220705-200100_first_app.jpg](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/3df70ec2-02fb-4dac-ad12-aff953226a38/Screenshot_20220705-200100_first_app.jpg)
+![화면 캡처 2022-07-05 211152](https://user-images.githubusercontent.com/76472415/177324698-0aceac31-d9a3-4f41-b6ed-d345aba4e43b.png)
 
 **Main features**
 
@@ -103,7 +100,7 @@ figure>
 
 ### TAB 3 - 커뮤니티
 
-
+![화면 캡처 2022-07-05 211214](https://user-images.githubusercontent.com/76472415/177324724-c9fef1b1-0ddc-462d-8250-16bcbfbca7a7.png)
 
 **Main features**
 
