@@ -67,15 +67,19 @@ class ReadFragment : Fragment() {
         key = requireArguments().getString("key")
         Log.e("receive key: ", key.toString())
         mBinding = FragmentReadBinding.inflate(inflater, container, false)
-        // 삭제 구현
-        /*binding.btnDelete.setOnClickListener{
-            database.getReference("board").child(key.toString()).removeValue()
-            Toast.makeText(mainActivity, "삭제 완료", Toast.LENGTH_LONG).show()
-            mainActivity.finish()
-        }*/
 
         getPostData(key.toString())
         showDialog(key.toString())
+
+        binding.btnUpdate.setOnClickListener{
+            val updatePostFragment = UpdateFragment()
+            val bundle = Bundle()
+            bundle.putString("key", key)
+            updatePostFragment.arguments = bundle
+            requireActivity().getSupportFragmentManager().beginTransaction()
+                .replace(R.id.fl_container, updatePostFragment, "updatePost")
+                .commit();
+        }
 
         return binding.root
     }
